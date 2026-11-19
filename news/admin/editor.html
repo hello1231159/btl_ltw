@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thêm bài viết - góc nội thất và cảm hứng không gian sống.">
+  <title>Thêm bài viết | Góc Sống</title>
+  <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+
+<div class="admin-shell">
+<aside class="admin-sidebar">
+  <a class="admin-brand" href="articles.html">GÓC SỐNG <span>QUẢN TRỊ</span></a>
+  <p class="side-label">QUẢN LÝ NỘI DUNG</p>
+  <nav class="admin-nav" aria-label="Quản trị">
+    <a class="selected" href="articles.html">▤ &nbsp; Bài viết</a>
+    <a class="" href="comments.html">☷ &nbsp; Bình luận</a>
+    <a href="../index.html">↖ &nbsp; Xem website</a>
+  </nav>
+  <div class="side-bottom">BTL LTW <span>· Phần #4</span></div>
+</aside>
+<div class="admin-workspace"><header class="admin-topbar"><span>Quản lý nội dung / Thêm bài viết</span><span class="admin-user">Quản trị viên</span></header>
+<main class="admin-main"><div class="page-title"><div><p class="eyebrow">BIÊN TẬP BÀI VIẾT</p><h1>Thêm bài viết</h1><p>Điền nội dung, ảnh minh họa và thông tin hiển thị.</p></div><a class="secondary-btn" href="articles.html">← Trở lại</a></div>
+<form class="editor-layout" action="#" method="post" enctype="multipart/form-data">
+  <section class="panel editor-panel"><h2>Nội dung bài viết</h2>
+    <label for="title">Tiêu đề <span>*</span></label><input id="title" name="title" type="text" maxlength="180" required value="" placeholder="Nhập tiêu đề bài viết">
+    <label for="summary">Mô tả ngắn <span>*</span></label><textarea id="summary" name="summary" rows="3" maxlength="320" required placeholder="Giới thiệu ngắn gọn nội dung bài viết"></textarea>
+    <label for="content">Nội dung <span>*</span></label><textarea id="content" name="content" rows="13" required placeholder="Viết nội dung bài viết..."></textarea>
+  </section>
+  <aside class="editor-side"><section class="panel editor-panel"><h2>Thông tin xuất bản</h2>
+    <label for="category">Danh mục</label><select id="category" name="category"><option value="">Chọn danh mục</option><option>Phòng khách</option><option>Phòng ngủ</option><option>Phòng ăn</option><option>Không gian sống</option><option>Trang trí</option><option>Góc tư vấn</option></select>
+    <label for="status">Trạng thái</label><select id="status" name="status"><option>Đã đăng</option><option selected>Bản nháp</option></select>
+    <label for="photo">Ảnh bìa</label><input id="photo" name="photo" type="file" accept="image/png,image/jpeg,image/webp"><p class="help-text">Chọn ảnh từ máy tính. Ảnh sẽ được xử lý khi có PHP.</p>
+  </section><section class="panel editor-panel"><h2>Tìm kiếm (SEO)</h2>
+    <label for="seo-title">Tiêu đề SEO</label><input id="seo-title" name="seo_title" maxlength="180" type="text" value="">
+    <label for="seo-keywords">Từ khóa</label><input id="seo-keywords" name="keywords" maxlength="200" type="text" placeholder="nội thất, nhà đẹp...">
+    <label for="seo-description">Mô tả SEO</label><textarea id="seo-description" name="seo_description" maxlength="320" rows="3"></textarea>
+  </section><div class="editor-actions"><a class="secondary-btn" href="articles.html">Hủy</a><button class="primary-btn" type="submit">Thêm bài viết</button></div></aside>
+</form></main></div></div>
+
+</body>
+</html>

@@ -25,7 +25,7 @@
     <p>Khám phá ý tưởng cho không gian sống, từ góc phòng nhỏ đến những thay đổi tạo nên sự thoải mái mỗi ngày.</p>
   </section>
 
-  <section class="featured container" aria-label="Bài viết nổi bật">
+  <section class="featured container phong-khach" aria-label="Bài viết nổi bật">
     <a class="featured-image" href="article.html"><img src="assets/images/living.webp" alt="Phòng khách sáng với sofa màu kem và bàn tròn bằng gỗ" loading="lazy" width="512" height="512"></a>
     <div class="featured-copy">
       <span class="eyebrow">CÂU CHUYỆN NỔI BẬT</span>
@@ -41,40 +41,122 @@
     <form class="search-bar" action="index.html" method="get" role="search">
       <label for="keyword">Tìm kiếm bài viết</label>
       <input id="keyword" name="keyword" type="search" placeholder="Nhập từ khóa bài viết...">
+      <label for="category">Danh mục</label>
+      <select id="category" name="category">
+        <option value="all">Tất cả danh mục</option>
+        <option value="phong-khach">Phòng khách</option>
+        <option value="goc-tu-van">Góc tư vấn</option>
+        <option value="khong-gian-song">Không gian sống</option>
+        <option value="phong-an">Phòng ăn</option>
+        <option value="phong-ngu">Phòng ngủ</option>
+        <option value="trang-tri">Trang trí</option>
+      </select>
       <button type="submit">Tìm kiếm</button>
     </form>
-    <div class="article-grid"><article class="story-card">
+    <p id="search-status" hidden>Không tìm thấy bài viết nào</p>
+    <div class="article-grid"><article class="story-card goc-tu-van">
   <a class="story-image" href="article-light.html"><img src="assets/images/small-dining.webp" alt="Góc bàn ăn cạnh cửa sổ lớn đón nắng nhẹ" loading="lazy" width="512" height="512"></a>
   <div class="story-meta"><span>Góc tư vấn</span><time>12/11/2026</time></div>
   <h3><a href="article-light.html">Mang ánh sáng tự nhiên vào căn nhà</a></h3>
   <p>Bố trí bàn ghế, rèm và những bề mặt phản chiếu để ánh sáng lan tỏa tự nhiên.</p>
   <a class="text-link" href="article-light.html">Đọc bài viết <span aria-hidden="true">→</span></a>
-</article><article class="story-card">
+</article><article class="story-card khong-gian-song">
   <a class="story-image" href="article-reading.html"><img src="assets/images/reading.webp" alt="Ghế bành cạnh đèn đứng và kệ sách gỗ" loading="lazy" width="512" height="512"></a>
   <div class="story-meta"><span>Không gian sống</span><time>10/11/2026</time></div>
   <h3><a href="article-reading.html">Tạo góc đọc sách ấm cúng</a></h3>
   <p>Chỉ cần một chiếc ghế đúng độ cao, chiếc đèn êm mắt và một khoảng yên tĩnh.</p>
   <a class="text-link" href="article-reading.html">Đọc bài viết <span aria-hidden="true">→</span></a>
-</article><article class="story-card">
+</article><article class="story-card phong-an">
   <a class="story-image" href="article-dining.html"><img src="assets/images/dining.webp" alt="Bàn ăn gỗ có lọ hoa cạnh khung cửa lớn" loading="lazy" width="512" height="512"></a>
   <div class="story-meta"><span>Phòng ăn</span><time>08/11/2026</time></div>
   <h3><a href="article-dining.html">Bàn ăn là nơi ngôi nhà gặp nhau</a></h3>
   <p>Chọn bàn ăn theo thói quen sinh hoạt để bữa cơm thường ngày cũng đáng mong chờ.</p>
   <a class="text-link" href="article-dining.html">Đọc bài viết <span aria-hidden="true">→</span></a>
-</article><article class="story-card">
+</article><article class="story-card phong-ngu">
   <a class="story-image" href="article-bedroom.html"><img src="assets/images/bedroom.webp" alt="Giường ngủ tông kem với đèn bàn vàng ấm" loading="lazy" width="512" height="512"></a>
   <div class="story-meta"><span>Phòng ngủ</span><time>05/11/2026</time></div>
   <h3><a href="article-bedroom.html">Chọn bảng màu cho phòng ngủ thư thái</a></h3>
   <p>Sự phối hợp giữa màu kem, màu gỗ và chất liệu vải mang đến cảm giác nghỉ ngơi.</p>
   <a class="text-link" href="article-bedroom.html">Đọc bài viết <span aria-hidden="true">→</span></a>
-</article><article class="story-card">
+</article><article class="story-card trang-tri">
   <a class="story-image" href="article-shelf.html"><img src="assets/images/shelf.webp" alt="Kệ gỗ trang trí với sách và đồ gốm màu trung tính" loading="lazy" width="512" height="512"></a>
   <div class="story-meta"><span>Trang trí</span><time>02/11/2026</time></div>
   <h3><a href="article-shelf.html">Sắp xếp kệ gỗ mà không làm căn phòng rối</a></h3>
   <p>Kết hợp sách, đồ gốm và những khoảng trống để chiếc kệ có nhịp điệu tự nhiên.</p>
   <a class="text-link" href="article-shelf.html">Đọc bài viết <span aria-hidden="true">→</span></a>
-</article></div>
-    <nav class="pagination" aria-label="Phân trang tin tức"><span class="current">01</span><span class="muted">/ 01</span></nav>
+</article>
+      <article class="story-card phong-khach">
+        <a class="story-image" href="article-sofa-small.html"><img src="assets/images/living.webp" alt="Phòng khách sáng với sofa kem và đồ nội thất bằng gỗ" loading="lazy" width="512" height="512"></a>
+        <div class="story-meta"><span>Phòng khách</span><time>31/10/2026</time></div>
+        <h3><a href="article-sofa-small.html">Ba cách bố trí sofa để phòng khách rộng hơn</a></h3>
+        <p>Chọn vị trí sofa hợp lý để lối đi thông thoáng và chỗ ngồi thêm thoải mái.</p>
+        <a class="text-link" href="article-sofa-small.html">Đọc bài viết <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="story-card khong-gian-song">
+        <a class="story-image" href="article-window-corner.html"><img src="assets/images/reading.webp" alt="Ghế thư giãn cạnh cửa sổ và đèn đứng" loading="lazy" width="512" height="512"></a>
+        <div class="story-meta"><span>Không gian sống</span><time>28/10/2026</time></div>
+        <h3><a href="article-window-corner.html">Tạo góc thư giãn cạnh cửa sổ</a></h3>
+        <p>Tận dụng ánh sáng dịu và một chiếc ghế êm để có khoảng nghỉ ngay trong nhà.</p>
+        <a class="text-link" href="article-window-corner.html">Đọc bài viết <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="story-card goc-tu-van">
+        <a class="story-image" href="article-desk-lamp.html"><img src="assets/images/reading.webp" alt="Ghế và đèn chiếu sáng ấm trong góc đọc sách" loading="lazy" width="512" height="512"></a>
+        <div class="story-meta"><span>Góc tư vấn</span><time>25/10/2026</time></div>
+        <h3><a href="article-desk-lamp.html">Chọn đèn bàn cho buổi tối dễ chịu</a></h3>
+        <p>Chú ý vị trí đặt đèn, ánh sáng và độ chói khi làm việc hoặc đọc sách.</p>
+        <a class="text-link" href="article-desk-lamp.html">Đọc bài viết <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="story-card phong-an">
+        <a class="story-image" href="article-round-table.html"><img src="assets/images/dining.webp" alt="Bàn ăn gỗ với ghế bọc vải cạnh cửa sổ" loading="lazy" width="512" height="512"></a>
+        <div class="story-meta"><span>Phòng ăn</span><time>22/10/2026</time></div>
+        <h3><a href="article-round-table.html">Bàn ăn tròn phù hợp không gian nào?</a></h3>
+        <p>Nhìn vào lối đi và số người dùng để chọn kiểu bàn ăn thuận tiện.</p>
+        <a class="text-link" href="article-round-table.html">Đọc bài viết <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="story-card phong-ngu">
+        <a class="story-image" href="article-bedroom-fabric.html"><img src="assets/images/bedroom.webp" alt="Phòng ngủ tông sáng với giường và đèn ngủ ấm" loading="lazy" width="512" height="512"></a>
+        <div class="story-meta"><span>Phòng ngủ</span><time>19/10/2026</time></div>
+        <h3><a href="article-bedroom-fabric.html">Phối chăn ga trung tính cho phòng ngủ</a></h3>
+        <p>Kết hợp màu vải, chất liệu và họa tiết nhẹ để phòng ngủ không đơn điệu.</p>
+        <a class="text-link" href="article-bedroom-fabric.html">Đọc bài viết <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="story-card trang-tri">
+        <a class="story-image" href="article-coffee-table.html"><img src="assets/images/living.webp" alt="Không gian phòng khách với bàn thấp và sofa màu kem" loading="lazy" width="512" height="512"></a>
+        <div class="story-meta"><span>Trang trí</span><time>16/10/2026</time></div>
+        <h3><a href="article-coffee-table.html">Trang trí bàn trà bằng ít món đồ</a></h3>
+        <p>Dùng sách, khay nhỏ hoặc bình hoa để bàn trà có điểm nhấn mà vẫn gọn.</p>
+        <a class="text-link" href="article-coffee-table.html">Đọc bài viết <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="story-card goc-tu-van">
+        <a class="story-image" href="article-curtain-light.html"><img src="assets/images/small-dining.webp" alt="Góc bàn ăn gần cửa sổ đón ánh sáng tự nhiên" loading="lazy" width="512" height="512"></a>
+        <div class="story-meta"><span>Góc tư vấn</span><time>13/10/2026</time></div>
+        <h3><a href="article-curtain-light.html">Chọn rèm cửa sáng mà không chói</a></h3>
+        <p>Kết hợp lớp rèm mỏng và rèm dày để chủ động điều chỉnh ánh sáng trong ngày.</p>
+        <a class="text-link" href="article-curtain-light.html">Đọc bài viết <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="story-card trang-tri">
+        <a class="story-image" href="article-open-shelf.html"><img src="assets/images/shelf.webp" alt="Kệ mở bằng gỗ được trang trí sách và đồ gốm" loading="lazy" width="512" height="512"></a>
+        <div class="story-meta"><span>Trang trí</span><time>10/10/2026</time></div>
+        <h3><a href="article-open-shelf.html">Kệ mở cần bao nhiêu khoảng trống?</a></h3>
+        <p>Sắp xếp đồ vật theo nhóm để kệ vừa hữu dụng vừa thoáng mắt.</p>
+        <a class="text-link" href="article-open-shelf.html">Đọc bài viết <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="story-card khong-gian-song">
+        <a class="story-image" href="article-work-nook.html"><img src="assets/images/reading.webp" alt="Góc ghế cạnh cửa sổ và kệ sách trong phòng" loading="lazy" width="512" height="512"></a>
+        <div class="story-meta"><span>Không gian sống</span><time>07/10/2026</time></div>
+        <h3><a href="article-work-nook.html">Tận dụng góc nhỏ làm nơi làm việc</a></h3>
+        <p>Tổ chức một góc làm việc gọn gàng bằng bàn vừa cỡ và ánh sáng phù hợp.</p>
+        <a class="text-link" href="article-work-nook.html">Đọc bài viết <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="story-card phong-ngu">
+        <a class="story-image" href="article-bedside-table.html"><img src="assets/images/bedroom.webp" alt="Giường ngủ tông kem và đèn đặt cạnh giường" loading="lazy" width="512" height="512"></a>
+        <div class="story-meta"><span>Phòng ngủ</span><time>04/10/2026</time></div>
+        <h3><a href="article-bedside-table.html">Bố trí bàn phụ cạnh giường ngủ</a></h3>
+        <p>Chọn chiều cao bàn và vị trí đèn để đồ dùng ban đêm luôn trong tầm tay.</p>
+        <a class="text-link" href="article-bedside-table.html">Đọc bài viết <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+    <nav class="pagination" aria-label="Phân trang tin tức"></nav>
   </section>
 </main>
 <footer class="site-footer">
@@ -83,5 +165,6 @@
     <div><a href="index.html">Tin tức</a><span>BTL LTW</span></div>
   </div>
 </footer>
+<script src="assets/js/news.js"></script>
 </body>
 </html>

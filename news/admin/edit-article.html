@@ -5,39 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sửa bài viết - góc nội thất và cảm hứng không gian sống.">
   <title>Sửa bài viết | Góc Sống</title>
+  <link rel="stylesheet" href="../assets/css/tailadmin.css">
   <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
-<body>
+<body class="bg-gray-50 text-sm text-gray-800">
 
-<div class="admin-shell">
-<aside class="admin-sidebar">
-  <a class="admin-brand" href="articles.html">GÓC SỐNG <span>QUẢN TRỊ</span></a>
-  <p class="side-label">QUẢN LÝ NỘI DUNG</p>
-  <nav class="admin-nav" aria-label="Quản trị">
-    <a class="selected" href="articles.html">▤ &nbsp; Bài viết</a>
-    <a class="" href="comments.html">☷ &nbsp; Bình luận</a>
-    <a href="../index.html">↖ &nbsp; Xem website</a>
+<div class="min-h-screen lg:flex">
+<aside class="flex flex-col border-b border-gray-200 bg-white px-5 py-4 lg:sticky lg:top-0 lg:h-screen lg:w-72.5 lg:shrink-0 lg:border-r lg:border-b-0 lg:py-8">
+  <a class="mb-4 text-xl font-semibold text-gray-900 lg:mb-8" href="articles.html">GÓC SỐNG <span class="block text-xs font-medium text-gray-500">QUẢN TRỊ</span></a>
+  <p class="mb-2 hidden px-3 text-xs font-medium text-gray-500 lg:block">QUẢN LÝ NỘI DUNG</p>
+  <nav class="flex flex-wrap gap-1 lg:flex-col" aria-label="Quản trị">
+    <a class="menu-item menu-item-active" href="articles.html">▤ &nbsp; Bài viết</a>
+    <a class="menu-item menu-item-inactive" href="comments.html">☷ &nbsp; Bình luận</a>
+    <a class="menu-item menu-item-inactive" href="../index.html">↖ &nbsp; Xem website</a>
   </nav>
-  <div class="side-bottom">BTL LTW <span>· Phần #4</span></div>
+  <div class="mt-auto hidden border-t border-gray-200 px-3 pt-4 text-xs text-gray-500 lg:block">BTL LTW <span>· Phần #4</span></div>
 </aside>
-<div class="admin-workspace"><header class="admin-topbar"><span>Quản lý nội dung / Sửa bài viết</span><span class="admin-user">Quản trị viên</span></header>
-<main class="admin-main"><div class="page-title"><div><p class="eyebrow">BIÊN TẬP BÀI VIẾT</p><h1>Sửa bài viết</h1><p>Điền nội dung, ảnh minh họa và thông tin hiển thị.</p></div><a class="secondary-btn" href="articles.html">← Trở lại</a></div>
+<div class="min-w-0 flex-1"><header class="flex items-center justify-between gap-4 border-b border-gray-200 bg-white px-4 py-4 text-sm text-gray-500 md:px-6"><span>Quản lý nội dung / Sửa bài viết</span><span class="shrink-0 font-medium text-gray-700">Quản trị viên</span></header>
+<main class="mx-auto max-w-screen-2xl p-4 md:p-6"><div class="page-title"><div><p class="eyebrow">BIÊN TẬP BÀI VIẾT</p><h1>Sửa bài viết</h1><p>Điền nội dung, ảnh minh họa và thông tin hiển thị.</p></div><a class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 shadow-theme-xs hover:bg-gray-50" href="articles.html">← Trở lại</a></div>
 <form class="editor-layout" action="#" method="post" enctype="multipart/form-data">
-  <section class="panel editor-panel"><h2>Nội dung bài viết</h2>
-    <label for="title">Tiêu đề <span>*</span></label><input id="title" name="title" type="text" maxlength="180" required value="Phòng khách nhỏ vẫn có thể thoáng đãng" placeholder="Nhập tiêu đề bài viết">
-    <label for="summary">Mô tả ngắn <span>*</span></label><textarea id="summary" name="summary" rows="3" maxlength="320" required placeholder="Giới thiệu ngắn gọn nội dung bài viết">Một vài thay đổi về tỷ lệ, ánh sáng và khoảng trống có thể khiến căn phòng nhỏ trở nên dễ chịu hơn.</textarea>
-    <label for="content">Nội dung <span>*</span></label><textarea id="content" name="content" rows="13" required placeholder="Viết nội dung bài viết...">Một căn phòng không cần thật rộng để mang lại cảm giác thoải mái. Khi mỗi món đồ có vị trí rõ ràng, ánh sáng được tận dụng và lối đi được để thoáng, diện tích khiêm tốn vẫn có thể trở thành nơi cả nhà muốn trở về.</textarea>
+  <section class="editor-panel rounded-2xl border border-gray-200 bg-white"><h2>Nội dung bài viết</h2>
+    <label for="title">Tiêu đề <span>*</span></label><input class="w-full min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" id="title" name="title" type="text" maxlength="180" required value="Phòng khách nhỏ vẫn có thể thoáng đãng" placeholder="Nhập tiêu đề bài viết">
+    <label for="summary">Mô tả ngắn <span>*</span></label><textarea class="w-full min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" id="summary" name="summary" rows="3" maxlength="320" required placeholder="Giới thiệu ngắn gọn nội dung bài viết">Một vài thay đổi về tỷ lệ, ánh sáng và khoảng trống có thể khiến căn phòng nhỏ trở nên dễ chịu hơn.</textarea>
+    <label for="content">Nội dung <span>*</span></label><textarea class="w-full min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" id="content" name="content" rows="13" required placeholder="Viết nội dung bài viết...">Một căn phòng không cần thật rộng để mang lại cảm giác thoải mái. Khi mỗi món đồ có vị trí rõ ràng, ánh sáng được tận dụng và lối đi được để thoáng, diện tích khiêm tốn vẫn có thể trở thành nơi cả nhà muốn trở về.</textarea>
   </section>
-  <aside class="editor-side"><section class="panel editor-panel"><h2>Thông tin xuất bản</h2>
-    <label for="category">Danh mục</label><select id="category" name="category"><option value="">Chọn danh mục</option><option selected>Phòng khách</option><option>Phòng ngủ</option><option>Phòng ăn</option><option>Không gian sống</option><option>Trang trí</option><option>Góc tư vấn</option></select>
-    <label for="status">Trạng thái</label><select id="status" name="status"><option>Đã đăng</option><option>Bản nháp</option></select>
-    <label for="photo">Ảnh bìa</label><input id="photo" name="photo" type="file" accept="image/png,image/jpeg,image/webp"><p class="help-text">Chọn ảnh từ máy tính. Ảnh sẽ được xử lý khi có PHP.</p>
-  </section><section class="panel editor-panel"><h2>Tìm kiếm (SEO)</h2>
-    <label for="seo-title">Tiêu đề SEO</label><input id="seo-title" name="seo_title" maxlength="180" type="text" value="Phòng khách nhỏ vẫn có thể thoáng đãng">
-    <label for="seo-keywords">Từ khóa</label><input id="seo-keywords" name="keywords" maxlength="200" type="text" placeholder="nội thất, nhà đẹp...">
-    <label for="seo-description">Mô tả SEO</label><textarea id="seo-description" name="seo_description" maxlength="320" rows="3">Một vài thay đổi về tỷ lệ, ánh sáng và khoảng trống có thể khiến căn phòng nhỏ trở nên dễ chịu hơn.</textarea>
-  </section><div class="editor-actions"><a class="secondary-btn" href="articles.html">Hủy</a><button class="primary-btn" type="submit">Sửa bài viết</button></div></aside>
+  <aside class="editor-side"><section class="editor-panel rounded-2xl border border-gray-200 bg-white"><h2>Thông tin xuất bản</h2>
+    <label for="category">Danh mục</label><select class="w-full min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" id="category" name="category"><option value="">Chọn danh mục</option><option selected>Phòng khách</option><option>Phòng ngủ</option><option>Phòng ăn</option><option>Không gian sống</option><option>Trang trí</option><option>Góc tư vấn</option></select>
+    <label for="status">Trạng thái</label><select class="w-full min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" id="status" name="status"><option>Đã đăng</option><option>Bản nháp</option></select>
+    <label for="photo">Ảnh bìa</label><input class="w-full min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" id="photo" name="photo" type="file" accept="image/png,image/jpeg,image/webp"><p class="help-text">Chọn ảnh từ máy tính. Ảnh sẽ được xử lý khi có PHP.</p>
+  </section><section class="editor-panel rounded-2xl border border-gray-200 bg-white"><h2>Tìm kiếm (SEO)</h2>
+    <label for="seo-title">Tiêu đề SEO</label><input class="w-full min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" id="seo-title" name="seo_title" maxlength="180" type="text" value="Phòng khách nhỏ vẫn có thể thoáng đãng">
+    <label for="seo-keywords">Từ khóa</label><input class="w-full min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" id="seo-keywords" name="keywords" maxlength="200" type="text" placeholder="nội thất, nhà đẹp...">
+    <label for="seo-description">Mô tả SEO</label><textarea class="w-full min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" id="seo-description" name="seo_description" maxlength="320" rows="3">Một vài thay đổi về tỷ lệ, ánh sáng và khoảng trống có thể khiến căn phòng nhỏ trở nên dễ chịu hơn.</textarea>
+  </section><div class="editor-actions"><a class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 shadow-theme-xs hover:bg-gray-50" href="articles.html">Hủy</a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600" type="submit">Sửa bài viết</button></div></aside>
 </form></main></div></div>
 
+<script src="../assets/js/form-validation.js"></script>
 </body>
 </html>

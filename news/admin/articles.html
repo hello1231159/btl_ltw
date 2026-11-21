@@ -5,26 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bài viết - góc nội thất và cảm hứng không gian sống.">
   <title>Bài viết | Góc Sống</title>
+  <link rel="stylesheet" href="../assets/css/tailadmin.css">
   <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
-<body>
+<body class="bg-gray-50 text-sm text-gray-800">
 
-<div class="admin-shell">
-<aside class="admin-sidebar">
-  <a class="admin-brand" href="articles.html">GÓC SỐNG <span>QUẢN TRỊ</span></a>
-  <p class="side-label">QUẢN LÝ NỘI DUNG</p>
-  <nav class="admin-nav" aria-label="Quản trị">
-    <a class="selected" href="articles.html">▤ &nbsp; Bài viết</a>
-    <a class="" href="comments.html">☷ &nbsp; Bình luận</a>
-    <a href="../index.html">↖ &nbsp; Xem website</a>
+<div class="min-h-screen lg:flex">
+<aside class="flex flex-col border-b border-gray-200 bg-white px-5 py-4 lg:sticky lg:top-0 lg:h-screen lg:w-72.5 lg:shrink-0 lg:border-r lg:border-b-0 lg:py-8">
+  <a class="mb-4 text-xl font-semibold text-gray-900 lg:mb-8" href="articles.html">GÓC SỐNG <span class="block text-xs font-medium text-gray-500">QUẢN TRỊ</span></a>
+  <p class="mb-2 hidden px-3 text-xs font-medium text-gray-500 lg:block">QUẢN LÝ NỘI DUNG</p>
+  <nav class="flex flex-wrap gap-1 lg:flex-col" aria-label="Quản trị">
+    <a class="menu-item menu-item-active" aria-current="page" href="articles.html">▤ &nbsp; Bài viết</a>
+    <a class="menu-item menu-item-inactive" href="comments.html">☷ &nbsp; Bình luận</a>
+    <a class="menu-item menu-item-inactive" href="../index.html">↖ &nbsp; Xem website</a>
   </nav>
-  <div class="side-bottom">BTL LTW <span>· Phần #4</span></div>
+  <div class="mt-auto hidden border-t border-gray-200 px-3 pt-4 text-xs text-gray-500 lg:block">BTL LTW <span>· Phần #4</span></div>
 </aside>
-<div class="admin-workspace"><header class="admin-topbar"><span>Quản lý nội dung / Bài viết</span><span class="admin-user">Quản trị viên</span></header>
-<main class="admin-main"><div class="page-title"><div><p class="eyebrow">TIN TỨC</p><h1>Quản lý bài viết</h1><p>Tạo và cập nhật những câu chuyện đăng trên website.</p></div><a class="primary-btn" href="editor.html">+ Thêm bài viết</a></div>
+<div class="min-w-0 flex-1"><header class="flex items-center justify-between gap-4 border-b border-gray-200 bg-white px-4 py-4 text-sm text-gray-500 md:px-6"><span>Quản lý nội dung / Bài viết</span><span class="shrink-0 font-medium text-gray-700">Quản trị viên</span></header>
+<main class="mx-auto max-w-screen-2xl p-4 md:p-6"><div class="page-title"><div><p class="eyebrow">TIN TỨC</p><h1>Quản lý bài viết</h1><p>Tạo và cập nhật những câu chuyện đăng trên website.</p></div><a class="inline-flex items-center justify-center whitespace-nowrap rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600" href="editor.html">+ Thêm bài viết</a></div>
 <div class="metrics"><div><span>Tổng bài viết</span><strong>06</strong></div><div><span>Đã đăng</span><strong>04</strong></div><div><span>Bản nháp</span><strong>02</strong></div></div>
-<section class="panel"><div class="panel-title"><h2>Danh sách bài viết</h2><p>Thông tin hiển thị hiện là dữ liệu mẫu.</p></div>
-<form class="admin-filters" action="articles.html" method="get"><input type="search" name="keyword" aria-label="Tìm bài viết" placeholder="Tìm theo tiêu đề..."><select name="status" aria-label="Lọc trạng thái"><option value="">Tất cả trạng thái</option><option>Đã đăng</option><option>Bản nháp</option></select><button type="submit" class="secondary-btn">Tìm kiếm</button></form>
+<section class="overflow-hidden rounded-2xl border border-gray-200 bg-white"><div class="panel-title"><h2>Danh sách bài viết</h2><p>Thông tin hiển thị hiện là dữ liệu mẫu.</p></div>
+<form class="admin-filters" action="articles.html" method="get"><input class="min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" type="search" name="keyword" aria-label="Tìm bài viết" placeholder="Tìm theo tiêu đề..."><select class="min-w-0 rounded-[10px] border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs outline-hidden placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/20" name="status" aria-label="Lọc trạng thái"><option value="">Tất cả trạng thái</option><option>Đã đăng</option><option>Bản nháp</option></select><button type="submit" class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 shadow-theme-xs hover:bg-gray-50">Tìm kiếm</button></form>
 <div class="table-scroll"><table><thead><tr><th><input type="checkbox" aria-label="Chọn tất cả"></th><th>BÀI VIẾT</th><th>DANH MỤC</th><th>TRẠNG THÁI</th><th>THAO TÁC</th></tr></thead><tbody><tr><td><input aria-label="Chọn bài 1" type="checkbox"></td>
       <td><div class="table-title"><img src="../assets/images/living.webp" alt="" width="64" height="52"><div><strong>Phòng khách nhỏ vẫn có thể thoáng đãng</strong><small>15/11/2026</small></div></div></td>
       <td>Phòng khách</td><td><span class="pill is-live">Đã đăng</span></td>
@@ -44,7 +45,8 @@
       <td><div class="table-title"><img src="../assets/images/shelf.webp" alt="" width="64" height="52"><div><strong>Sắp xếp kệ gỗ mà không làm căn phòng rối</strong><small>02/11/2026</small></div></div></td>
       <td>Trang trí</td><td><span class="pill is-draft">Bản nháp</span></td>
       <td><div class="table-actions"><a href="edit-article.html">Sửa</a><button type="button" class="danger-link">Xóa</button></div></td></tr></tbody></table></div>
-<div class="panel-footer"><p>Hiển thị 6 / 6 bài viết</p><div class="admin-pages"><span class="current">1</span></div></div></section></main></div></div>
+<div class="panel-footer"><p aria-live="polite">Hiển thị <span class="admin-page-count">6 / 6</span> bài viết</p><nav class="admin-pages" aria-label="Phân trang bài viết" hidden></nav></div></section></main></div></div>
 
+<script src="../assets/js/admin-pagination.js"></script>
 </body>
 </html>
